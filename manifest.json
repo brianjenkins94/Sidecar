@@ -1,12 +1,16 @@
 {
 	"background": {
-		"service_worker": "js/sw.js"
+		"service_worker": "js/sw.ts",
+		"type": "module"
 	},
 	"content_scripts": [
 		{
 			"all_frames": false,
+			"css": [
+				"css/style.css"
+			],
 			"js": [
-				"js/inject.js"
+				"js/inject.ts"
 			],
 			"matches": [
 				"https://mail.google.com/*"
@@ -17,8 +21,8 @@
 	"description": "",
 	"icons": {
 		"128": "images/icon-128x128.png",
-		"16": "images/icon-16x16.png",
-		"48": "images/icon-48x48.png"
+		"48": "images/icon-48x48.png",
+		"16": "images/icon-16x16.png"
 	},
 	"incognito": "not_allowed",
 	"manifest_version": 3,
@@ -28,13 +32,21 @@
 	],
 	"short_name": "Sidecar",
 	"version": "1.0.0",
-	"web_accessible_resources": [],
+	"web_accessible_resources": [
+		{
+			"resources": ["/js/*.js"],
+			"matches": ["https://mail.google.com/*"]
+		}
+	],
 	"action": {
-		"default_icon": "images/icon-48x48.png",
+		"default_icon": {
+			"128": "images/icon-128x128.png",
+			"48": "images/icon-48x48.png",
+			"16": "images/icon-16x16.png"
+		},
 		"default_popup": "pages/popup.html"
 	},
 	"host_permissions": [
-		"*://mail.google.com/*",
-		"*://*.googleusercontent.com/*"
+		"https://mail.google.com/*"
 	]
 }

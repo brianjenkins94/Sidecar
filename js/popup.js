@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 const tabs = await chrome.tabs.query({
 	"currentWindow": true,
 	"url": "https://mail.google.com/*"

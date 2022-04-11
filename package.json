@@ -4,6 +4,7 @@
   "description": "A Chrome Extension for extending Gmail.",
   "type": "module",
   "scripts": {
+    "start": "rollup --config --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,11 +18,14 @@
   },
   "homepage": "https://github.com/brianjenkins94/Sidecar#readme",
   "devDependencies": {
+    "@rollup/plugin-typescript": "latest",
     "@types/chrome": "latest",
-    "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "^7.32.0",
+    "rollup": "latest",
+    "rollup-plugin-chrome-extension": "^3.6.7",
+    "rollup-plugin-postprocess": "github:brettz9/rollup-plugin-postprocess#update",
     "typescript": "latest"
   }
 }

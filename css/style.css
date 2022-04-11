@@ -37,7 +37,7 @@
 /* We need the overlay to be above all of the elements. Defining a default z-index of 200 satisfies
  * that. */
 /**
- * Requires a max-height. Beware, this it not supported by all browsers. 
+ * Requires a max-height. Beware, this it not supported by all browsers.
  * At least we can support most cases, and max-height will still truncate the text
  */
 .u-hover-trigger:not(:hover) .u-hover-target {
@@ -2797,7 +2797,7 @@ ul.u-pipe-list>li+li:before {
     margin-left: 0px;
 }
 
-.pw-crx .BlankStatePage_imageContainer {
+.BlankStatePage_imageContainer {
     height: auto;
     padding-bottom: 20px;
 }
@@ -2828,7 +2828,7 @@ ul.u-pipe-list>li+li:before {
     font-size: 20px;
 }
 
-.pw-crx .BlankStatePage_title {
+.BlankStatePage_title {
     font-size: 16px;
 }
 
@@ -13232,23 +13232,23 @@ td.EmailComposerWidgetContainer_overflow {
     color: #FFFFFF;
 }
 
-.pw-crx.pw-gcal .PWExtension .PWExtensionFrame {
+.pw-gcal .PWExtension .PWExtensionFrame {
     z-index: 987;
 }
 
-.pw-crx.pw-gcal .Modal {
+.pw-gcal .Modal {
     z-index: 987;
 }
 
-.pw-crx.pw-gcal .Alloy-Modal_wrapper {
+.pw-gcal .Alloy-Modal_wrapper {
     z-index: 987;
 }
 
-.pw-crx.pw-gcal .Toaster {
+.pw-gcal .Toaster {
     z-index: 987;
 }
 
-.pw-crx.pw-gmail .PWExtension .PWExtensionFrame {
+.pw-gmail .PWExtension .PWExtensionFrame {
     z-index: 6;
 }
 
@@ -13320,7 +13320,7 @@ td.EmailComposerWidgetContainer_overflow {
     transition: background-color 0.2s cubic-bezier(0.55, 0, 0, 1);
 }
 
-.pw-crx .PWExtension .PWExtensionFrame_toggleBubble {
+.PWExtension .PWExtensionFrame_toggleBubble {
     display: none;
 }
 
@@ -13340,12 +13340,12 @@ td.EmailComposerWidgetContainer_overflow {
     transition: transform 0.2s cubic-bezier(0.55, 0, 0, 1);
 }
 
-.pw-crx .PWExtension .PWExtensionFrame {
+.PWExtension .PWExtensionFrame {
     transform: translateX(360px);
     top: 0px;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13354,38 +13354,38 @@ td.EmailComposerWidgetContainer_overflow {
     line-height: 32px;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionTitle_logo {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionTitle_logo {
     width: 120px;
     height: 32px;
     line-height: 32px;
     vertical-align: middle;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_controlIcons {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_controlIcons {
     display: flex;
     align-items: center;
     line-height: 32px;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_closeIcon,
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_openNewIcon {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_closeIcon,
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_openNewIcon {
     font-size: 20px;
     display: inline-block;
     cursor: pointer;
     color: #757575;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_closeIcon i.md,
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_openNewIcon i.md {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_closeIcon i.md,
+.PWExtension .PWExtensionFrame .PWExtensionFrame_titleBar .PWExtensionFrame_openNewIcon i.md {
     font-size: inherit;
     font-weight: normal;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_header {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_header {
     background: #F9F9FA;
 }
 
-.pw-crx .PWExtension .PWExtensionFrame .PWExtensionFrame_header .PWExtensionHeader_logo {
+.PWExtension .PWExtensionFrame .PWExtensionFrame_header .PWExtensionHeader_logo {
     display: none;
 }
 
@@ -13964,7 +13964,7 @@ td.EmailComposerWidgetContainer_overflow {
     font-weight: 400;
     line-height: 16px;
     /**
-   * Added to temporarily fix alignment issues until 
+   * Added to temporarily fix alignment issues until
    * release of Alloy icon button.
    */
     padding: 0;
@@ -15904,7 +15904,7 @@ td.EmailComposerWidgetContainer_overflow {
     top: 0;
 }
 
-.pw-crx .FormFramework_modal {
+.FormFramework_modal {
     top: 45px;
 }
 
@@ -16840,11 +16840,11 @@ td.EmailComposerWidgetContainer_overflow {
     bottom: 0px;
 }
 
-/* 
+/*
   We often want to display a set of things like this:
     foo | bar | baz
 
-  However this gets tricky if some of these items are optional, 
+  However this gets tricky if some of these items are optional,
   because you may or may not need the |, it would look dumb as "| bar" or "foo |"
   and the complexity gets worse the more items are in the list.
 
